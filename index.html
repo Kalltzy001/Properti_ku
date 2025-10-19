@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properti Indah - Jual dan Sewa Rumah</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS untuk Slider (SwiperJS) -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">
+                <svg class="logo-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.0995l-9 8.0005v10.9005h6v-6h6v6h6v-10.9005l-9-8.0005zm0 3.012l6 5.3335v8.6555h-3v-6h-6v6h-3v-8.6555l6-5.3335z"/></svg>
+                Properti indah
+            </h1>
+            <button class="hamburger-menu" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="main-nav" id="mobile-nav">
+                <ul>
+                    <li><a href="#hero">Beranda</a></li>
+                    <li><a href="#listing">Properti</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="overlay"></div>
+
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <h2>Temukan Rumah Impian Anda</h2>
+            <p class="hero-subtitle">Pilihan terbaik untuk hunian masa depan Anda.</p>
+            <a href="#listing" class="btn btn-primary">Lihat Properti</a>
+        </div>
+    </section>
+
+    <section id="listing" class="property-listing">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Properti Pilihan Kami</h2>
+            <div class="property-container">
+                <!-- Kartu properti akan dibuat oleh JavaScript di sini -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container" data-aos="fade-up">
+            <div class="about-content">
+                <h2 class="section-title">Mengapa Memilih Kami?</h2>
+                <p>Dengan pengalaman lebih dari 10 tahun, Properti Indah berkomitmen untuk memberikan layanan terbaik dalam menemukan hunian impian Anda. Kami tidak hanya menjual properti, kami membangun kepercayaan.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Agen Profesional & Berlisensi</li>
+                    <li><i class="fas fa-check-circle"></i> Proses Transparan & Aman</li>
+                    <li><i class="fas fa-check-circle"></i> Ribuan Listing Properti Berkualitas</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Hubungi Kami</a>
+            </div>
+            <div class="about-image">
+                <img src="tentang.png" alt="Tim Properti Indah">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <p>Punya pertanyaan? Tim kami siap membantu Anda.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Nama Anda" required>
+                <input type="email" placeholder="Email Anda" required>
+                <textarea placeholder="Pesan Anda..." rows="6" required></textarea>
+                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Properti indah. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- STRUKTUR MODAL (AWALNYA TERSEMBUNYI) -->
+    <div class="modal-overlay" id="property-modal">
+        <div class="modal-content">
+            <!-- Konten detail properti akan diisi oleh JavaScript di sini -->
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- JS untuk Slider (SwiperJS) -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
